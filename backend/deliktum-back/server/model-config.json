@@ -34,5 +34,13 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "event": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "typeOfEvent": {
+    "dataSource": "mongodb",
+    "public": true
   }
 }
