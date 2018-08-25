@@ -1,3 +1,17 @@
+
+
+=====================================================
+
+How to run (Adrian Mena):
+
+-Create Mongo database with name: deliktum
+-Backend: Port 3001: Open folder: backend>deliktum-back and run: node .
+-Frontend: Port 3000: Open folder: frontend>deliktium and run: npm start
+
+Thanks.
+
+
+=====================================================
 Introduction
 ======
 
@@ -32,7 +46,7 @@ Technologies
         - OpenStreet Maps
         - Leaflet
         - Or any other modern Map platform of your choosing
-        
+
 You have the liberty to use any other dependencies or NPM packages commonly used in the JS community.
 
 Specs
@@ -42,7 +56,7 @@ A simple functional UI experience is expected without emulating or doing a pixel
 Deliktum currently looks.
 
 1.- The main view of the app should be the map that is zoomed automatically to show all events displayed
-in the map. Render a Map component that let you click on certain points on the map to retrieve the 
+in the map. Render a Map component that let you click on certain points on the map to retrieve the
 location information and also click on displayed items that show the detailed information of an event.
 
 ![](docs/screens/map.png?raw=true)
@@ -51,25 +65,25 @@ location information and also click on displayed items that show the detailed in
 
 ![](docs/screens/cluster.png?raw=true)
 
-3.- There should be a button to report an event, clicking on it should open the form to create an 
+3.- There should be a button to report an event, clicking on it should open the form to create an
 event (Panel should slide from right, open in a modal or something else, be creative!)
 Use the following fields:
 
 - Description (Text field)
 - Type of event (Relationship to an Entity for type of events)
-- Date and time of the event (default value is current time, but user can select a different date 
+- Date and time of the event (default value is current time, but user can select a different date
 from the past)
 - Location (User should click on map to get location - latitude,longitude -)
 - Image
 
 ![](docs/screens/report.png?raw=true)
 
-4.- As a user I should be able to filter the events by type of event or point in time 
+4.- As a user I should be able to filter the events by type of event or point in time
 (all, today, last week, last month, last year).
 
 ![](docs/screens/filter.png?raw=true)
 
-5.- There should be a Feed sidebar that displays the last 10 events with option 
+5.- There should be a Feed sidebar that displays the last 10 events with option
 to load more. If I click on an event in this feed the main map zooms and the Info window is opened automatically.
 
 ![](docs/screens/feed.png?raw=true)
@@ -99,7 +113,7 @@ The evaluation criteria
     - UI (15%)
     - Dependencies Usage (5%)
     - Documentation (5%)
-    
+
 - Backend (100%)
      - REST or GraphQL endpoints (25%)
      - Data Modeling and MongoDB Use (10%)
@@ -133,6 +147,3 @@ Tech Rules
  the commit history will make the PR disqualified
 - Features that are not specified in the specs won't change the final score
 - Extra specs will improve the final score and will be analyzed and scored independently
-
-
-
